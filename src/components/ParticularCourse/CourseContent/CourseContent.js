@@ -340,7 +340,17 @@ export default class CourseContent extends Component {
 											/>{' '}
 										</div>
 									</Scrollchor>
-									<Scrollchor to="#related_courses" animate={{ offset: 0, duration: 300 }}>
+									<Scrollchor className="hideOnMobile"  to="#pastScore" animate={{ offset: 0, duration: 300 }}>
+										<div className="demo_button d-inline-block">
+											Past Results{' '}
+											<i
+												style={{ position: 'relative', top: '1.5px' }}
+												className="fas fa-angle-down    "
+											/>{' '}
+										</div>
+									</Scrollchor>
+
+									<Scrollchor className="hideOnDesktop" to="#related_courses" animate={{ offset: 0, duration: 300 }}>
 										<div className="demo_button d-inline-block">
 											Related Courses{' '}
 											<i
@@ -348,7 +358,7 @@ export default class CourseContent extends Component {
 												className="fas fa-angle-down    "
 											/>{' '}
 										</div>
-									</Scrollchor>
+									</Scrollchor>									
 								</div>
 							</div>
 							<div className="right_wrapper">
@@ -485,9 +495,9 @@ export default class CourseContent extends Component {
 											Submit
 										</button>
 										<div className="contact_us">
-											Alternatively, Contact us on Whatsapp at{' '}
-											<a href="https://api.whatsapp.com/send?phones=919741133224&text=Hi">
-												+91-9741133224
+											Alternatively, Call us at {' '}
+											<a href="#">
+												+91-9999306972
 											</a>
 										</div>
 									</form>

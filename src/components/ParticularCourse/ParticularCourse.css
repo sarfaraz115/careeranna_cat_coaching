@@ -5,3 +5,13 @@
 .navbar-header{
     margin-right: 0px !important;
 }
+.hideOnDesktop{
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.hideOnDesktop{
+		display:inline-block;
+	}
+	.hideOnMobile{display: none;}
+}
