@@ -1,0 +1,218 @@
+.footer {
+	background: #f1f0f0;
+	padding-top: 2rem;
+	margin-top: 10rem;
+	padding-bottom: 5.5rem;
+	padding-left: 70px;
+	color: #273544;
+	text-align: left !important;
+	.form-group {
+		position: relative;
+		input {
+			&:focus {
+				border: 1px solid #1989cd !important;
+			}
+			&:focus + label {
+				top: -8px;
+				opacity: 1;
+				color: #1989cd;
+				background: #fff;
+				z-index: 1;
+			}
+			& + label {
+				position: absolute;
+				z-index: -1;
+				font-size: 12px;
+				padding-left: 5px;
+				padding-right: 5px;
+				top: 10px;
+				left: 10%;
+				opacity: 0.7;
+				transition: all 300ms ease-in;
+			}
+			&.touched {
+				border: 1px solid #1989cd !important;
+				& + label {
+					top: -8px;
+					opacity: 1;
+					color: #1989cd;
+					background: #fff;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}
+.footer_left_links {
+	padding-top: 1.5rem;
+}
+.footer_left_heading {
+	font-size: 35px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.footer_left_text {
+	font-size: 14px;
+	text-align: justify;
+	padding-bottom: 4rem;
+	padding-top: 1rem;
+}
+.list-inline li {
+	display: inline;
+}
+.footer_left_links ul > li {
+	padding-bottom: 0.5rem;
+}
+.footer_left_links ul > li > a {
+	opacity: 0.9;
+	color: #273544;
+	font-weight: 200;
+	font-size: 11px;
+	@media only screen and (max-width: 650px) {
+		opacity: 1;
+		font-weight: 500;
+	}
+}
+.footer_left_links h6 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	min-height: 4rem;
+	padding-bottom: 0.8rem;
+	@media only screen and (max-width: 650px) {
+		padding-bottom: 0rem;
+		margin-bottom: 0rem;
+		min-height: 3rem;
+	}
+}
+.social_icons {
+	padding-right: 0px !important;
+	margin-bottom: 2.5rem;
+}
+.social_icons ul > li > a {
+	padding-left: 0px !important;
+	font-size: 15px;
+	margin-right: 1.4rem;
+}
+.coprwrite_link {
+	text-align: right;
+}
+.coprwrite_link ul > li > a {
+	font-size: 11px;
+	color: #273544 !important;
+}
+.subs_form h4 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	font-size: 1.7rem;
+	padding-top: 2rem;
+	margin-bottom: 0px !important;
+	padding-bottom: 2rem !important;
+}
+.subs_form h5 {
+	padding: 0px;
+	padding-bottom: 0.6rem;
+	margin: 0px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 18px;
+}
+.footer .form {
+	padding-top: 2rem;
+}
+.subs_form form input {
+	height: 4.6rem;
+	font-size: 1.4rem;
+	padding-left: 2rem;
+}
+.footer .subs_form form button {
+	font-size: 1.4rem;
+	font-weight: 600;
+	border: none;
+	outline: none;
+	padding: 1.2rem 1.7rem 1.2rem 1.7rem;
+	margin-left: 1rem;
+}
+.footer_copyright {
+	text-align: left !important;
+	margin-top: 0;
+	padding-left: 1rem;
+	margin-bottom: 2rem;
+	font-size: 1.6rem;
+}
+.form-control {
+	text-align: left !important;
+}
+
+.social_icons .fab {
+	background: white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 23px;
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+}
+@media only screen and (max-width: 650px) {
+	.footer {
+		margin-top: 0px !important;
+		padding-top: 20px !important;
+		padding-left: 25px !important;
+	}
+	.footer_left_heading {
+		font-size: 30px;
+	}
+	.footer .footer_left_links {
+		padding-left: 0rem !important;
+	}
+	.footer_left_text {
+		font-size: 14px;
+		line-height: 1.5rem;
+		padding-bottom: 40px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+	}
+	.padding-left-none {
+		padding-left: 27px !important;
+		min-height: 215px !important;
+	}
+	.social_icons {
+		padding-top: 0px !important;
+	}
+	.coprwrite_link {
+		padding-right: 5px;
+		display: none;
+	}
+	.subs_form {
+		padding-top: 1rem;
+		margin-left: 27px;
+		font-size: 15px !important;
+		margin-right: 27px !important;
+	}
+	.subs_form h4 {
+		font-size: 21px !important;
+	}
+	.subs_form h5 {
+		font-size: 18px !important;
+	}
+	.subs_form form input {
+		height: 40px !important;
+	}
+	.subs_form form button {
+		margin-left: 8% !important;
+		font-size: 17px !important;
+	}
+	.footer_left_links .padding-left-none {
+		padding-left: 0px !important;
+		padding-top: 1rem;
+	}
+	.certificate {
+		margin-left: 0px !important;
+	}
+}

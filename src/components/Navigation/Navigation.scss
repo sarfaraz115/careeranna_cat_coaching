@@ -1,0 +1,72 @@
+$break-large: 650px;
+.Navigation {
+	.navbar.navbar-light {
+		background: #fff !important;
+		-webkit-box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.06);
+		-moz-box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.06);
+		box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.06);
+		.navbar-brand {
+			padding: 0px;
+			.logo_image {
+				width: 17.2rem;
+				height: 5.7rem;
+			}
+		}
+		.navbar-collapse {
+			.nav_link {
+				color: #323f4e;
+				padding-top: 1rem;
+				font-family: 'Roboto';
+				text-transform: uppercase;
+				font-size: 1.4rem;
+				a {
+					color: #000000;
+					padding-right: 4.5rem;
+				}
+				@media screen and (max-width: $break-large) {
+					background: #bb3335;
+					padding: 0.5rem;
+					margin: 0;
+					border-bottom: 1px solid #ccc;
+					a {
+						text-align: center;
+						color: White;
+						padding: 0px;
+					}
+				}
+			}
+			.btn {
+				font-weight: 500;
+				background: #1989cd;
+				border-radius: .4rem;
+				color: white;
+				border: none;
+				text-transform: uppercase;
+				outline: none;
+				margin-right: 1rem;
+				font-size: 1.36rem;
+				@media screen and (max-width: $break-large) {
+					margin: 2px auto;
+				}
+			}
+			.login {
+				padding: 1.1rem 3rem;
+				background: #273544;
+				@media screen and (max-width: $break-large) {
+					display: inline-block;
+					float: left;
+					width: 45%;
+					margin-right: 0.3rem;
+				}
+			}
+			.signup {
+				padding: 1.1rem 2.5rem;
+				@media screen and (max-width: $break-large) {
+					display: inline-block;
+					float: right;
+					width: 45%;
+				}
+			}
+		}
+	}
+}
